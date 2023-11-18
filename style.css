@@ -1,0 +1,91 @@
+.screen{grid-area: screen;}
+.number0{grid-area:zero;}
+.number1{grid-area:one;}
+.number2{grid-area:two;}
+.number3{grid-area:three;}
+.number4{grid-area:four;}
+.number5{grid-area:five;}
+.number6{grid-area:six;}
+.number7{grid-area:seven;}
+.number8{grid-area:eight;}
+.number9{grid-area:nine;}
+.dot{grid-area:dot;}
+.CE{grid-area:CE;}
+.C{grid-area:C;}
+
+.percentage{grid-area:percentage;}
+.multiply{grid-area:multiply;}
+.divide{grid-area:divide;}
+.collect{grid-area:collect;}
+.subtract{grid-area:subtract;}
+.equality{grid-area:equality;}
+
+
+*{
+    margin:0;
+    padding:0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+      'screen screen screen screen screen'
+      'seven eight nine percentage C '
+      'four five six multiply divide'
+      'one two three collect subtract'
+      'CE zero dot collect equality'
+      ;
+    gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  
+  .grid-container > .screen {
+    background-color: rgba(255, 255, 255);
+    text-align: right;
+    font-size: 50px;
+    height: 90px;
+    width: 400px;
+    border: none;
+  }
+
+  .grid-container > button {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    width: 72px;
+    padding: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    border-radius: 20%;
+    border: none;
+  }
+
+  .grid-container > button:hover{
+    color: yellow;
+  }
+  .grid-container > .num{
+    background-color: black;
+    color: white;
+  }
+
+  .grid-container > .delete
+  {
+    color: white;
+    background-color: rgb(195, 25, 25);
+  }
+
+  .grid-container > .del
+  {
+    color: white;
+    background-color: rgb(195, 25, 25);
+  }
+  .grid-container > .operationItems{
+    background-color: rgb(107, 100, 91);
+    color: white;
+  }
+
